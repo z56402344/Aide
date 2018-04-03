@@ -41,6 +41,10 @@ public class AccessibilityMainActivity extends Activity implements View.OnClickL
         mBtnEnter = (Button) findViewById(R.id.mBtnEnter);
         mTvPWD = (TextView) findViewById(R.id.mTvPWD);
         mEtActCode = (EditText) findViewById(R.id.mEtActCode);
+    }
+
+    private void fillData() {
+        AccessibilityOperator.getInstance().init(this);
         Cache cache = new Cache(FileCenter.getRootDir().getAbsolutePath(), KEY_FILE, true);
         cache.load();
         String code = cache.getString(KEY_CODE, "");
@@ -53,10 +57,6 @@ public class AccessibilityMainActivity extends Activity implements View.OnClickL
         }else {
 
         }
-    }
-
-    private void fillData() {
-        AccessibilityOperator.getInstance().init(this);
     }
 
     @Override

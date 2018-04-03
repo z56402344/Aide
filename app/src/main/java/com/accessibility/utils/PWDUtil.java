@@ -30,8 +30,14 @@ public class PWDUtil implements ICommon {
     //加密 mac地址+开始时间戳+固定码
     public static String encryption() {
         long ms = System.currentTimeMillis() / 1000;
-        StringBuilder sb = new StringBuilder(app.deviceId);
-//        sb.append(ms);
+        StringBuilder sb = new StringBuilder();
+        int randomLen = new Random().nextInt(11);
+        for (int i = 0; i < randomLen; i++) {
+            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
+        }
+        for (int i = 0; i < app.deviceId.length(); i++) {
+            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]).append(app.deviceId.charAt(i));
+        }
         Logger.i(TAG, "deviceId=" + app.deviceId + ", ms=" + ms);
         Logger.i(TAG, "加密=" + sb.toString());
         String str = String.valueOf(ms);
@@ -41,13 +47,21 @@ public class PWDUtil implements ICommon {
             String b = mCodeX[Integer.parseInt(a + "")];
             sb.append(b).append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
         }
+        sb.append(randomLen);
         Logger.i(TAG, "desc=" + sb.toString());
         return sb.toString();
     }
 
     public static String encryption2(String deviceId, String oldtms, String newtms) {
-        StringBuilder sb = new StringBuilder(deviceId);
-        Logger.i(TAG, "deviceId=" + deviceId + ", oldtms=" + oldtms);
+        Logger.i(TAG, "deviceId=" + deviceId + ", oldtms=" + oldtms+ ", newtms=" + newtms);
+        int randomLen = new Random().nextInt(11);
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < randomLen; i++) {
+            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
+        }
+        for (int i = 0; i < deviceId.length(); i++) {
+            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]).append(deviceId.charAt(i));
+        }
         char[] oldArr = oldtms.toCharArray();
         for (int i = 0; i < oldArr.length; i++) {
             char a = oldArr[i];
@@ -60,6 +74,7 @@ public class PWDUtil implements ICommon {
             String b = mCodeX[Integer.parseInt(a + "")];
             sb.append(b).append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
         }
+        sb.append(randomLen);
         Logger.i(TAG, "desc=" + sb.toString());
         return sb.toString();
     }
@@ -72,12 +87,14 @@ public class PWDUtil implements ICommon {
         Logger.i(TAG, "激活 deviceId=" + deviceId);
         if (TextUtils.isEmpty(deviceId) || !deviceId.equals(app.deviceId)) {
             //不是同一台机器
+            Logger.i(TAG, "激活 不是同一台机器");
             return false;
         }
         long newms = checkTimes(code);
         long curms = System.currentTimeMillis() / 1000;
         Logger.i(TAG, "激活 newms=" + newms+", curms="+curms);
         if (curms < newms) {
+            Logger.i(TAG, "激活 时间戳有问题");
             return true;
         }
         return false;
@@ -88,17 +105,18 @@ public class PWDUtil implements ICommon {
             return null;
         }
         int len = code.length();
-        int end = type == 0?len - 20:len - 40;
-        String deviceId = code.substring(0, end);
-        Logger.i(TAG, "解析后 deviceId=" + deviceId);
-        if (TextUtils.isEmpty(deviceId)) {
+        int start = Integer.parseInt(code.charAt(len-1)+"");
+        int end = type == 0?len - 21:len - 41;
+        String subStr = code.substring(start, end);
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i < subStr.length(); i+=2) {
+            sb.append(subStr.charAt(i));
+        }
+        Logger.i(TAG, "解析后 deviceId=" + sb.toString());
+        if (TextUtils.isEmpty(sb.toString())) {
             return null;
         }
-        if (!deviceId.equals(app.deviceId)) {
-            //不是同一台机器
-            return null;
-        }
-        return deviceId;
+        return sb.toString();
     }
 
     public static long checkTimes(String code) {
@@ -106,7 +124,7 @@ public class PWDUtil implements ICommon {
             return -1;
         }
         int len = code.length();
-        String copyCode = code.substring(len - 20, len);
+        String copyCode = code.substring(len - 21, len-1);
         char[] chars = copyCode.toCharArray();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < chars.length; i += 2) {

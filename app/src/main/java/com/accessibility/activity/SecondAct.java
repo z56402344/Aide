@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.accessibility.R;
 import com.accessibility.utils.PWDUtil;
+import com.k12lib.afast.log.Logger;
 
 import z.frame.BaseAct;
 
@@ -19,9 +20,11 @@ import z.frame.BaseAct;
  * 第二层页面，msg，设置
  */
 public class SecondAct extends BaseAct {
+    public static String TAG = SecondAct.class.getSimpleName();
 
     private TextView mTvPWD,mTCode,mTvAct;
     private EditText mEtActCode;
+    private String mCode = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,19 +46,20 @@ public class SecondAct extends BaseAct {
         if (cm == null || TextUtils.isEmpty(cm.getText())){
             return;
         }
-        mTCode.setText(cm.getText());
+        mCode = cm.getText().toString();
+        mTCode.setText(mCode);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
         case R.id.mBtnNew:
-            String str = mTCode.getText().toString().trim();
-            long tm = PWDUtil.checkTimes(str);
-            String devid = PWDUtil.parseDeviceID(str,0);
+            long tm = PWDUtil.checkTimes(mCode);
+            String devid = PWDUtil.parseDeviceID(mCode,0);
             mTvPWD.setText(tm+"");
             long newtm = tm + 60*60*24*30;
             String actCode = PWDUtil.encryption2(devid,String.valueOf(tm),String.valueOf(newtm));
+            Logger.i(TAG, "log devid=" + devid+", tm="+tm+", newtm="+newtm+", actCode="+actCode);
             mTvAct.setText(actCode);
             break;
         case R.id.mBtnCopy:
