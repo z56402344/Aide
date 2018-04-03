@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_accessibility_main"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.accessibility.AccessibilityMainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="序列号："
+            android:textSize="@dimen/sp_15"/>
+
+        <TextView
+            android:id="@+id/mTCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="@dimen/sp_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="序列号："
+            android:textSize="@dimen/sp_15"/>
+
+        <TextView
+            android:id="@+id/mTvPWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="@dimen/sp_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="序列号："
+            android:textSize="@dimen/sp_15"/>
+
+        <TextView
+            android:id="@+id/mTvAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="@dimen/sp_15"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mBtnNew"
+            style="@style/btnYellow"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="生成序列号"/>
+
+        <Button
+            android:id="@+id/mBtnCopy"
+            style="@style/btnYellow"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="复制序列号"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
