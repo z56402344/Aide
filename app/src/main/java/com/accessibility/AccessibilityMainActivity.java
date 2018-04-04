@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.accessibility.activity.SecondAct;
 import com.accessibility.core.FileCenter;
 import com.accessibility.utils.PWDUtil;
 import com.k12lib.afast.log.Logger;
@@ -66,9 +65,9 @@ public class AccessibilityMainActivity extends Activity implements View.OnClickL
         case R.id.mBtnEnter:
             startActivity(new Intent(this, AccessibilityNormalSample.class));
             break;
-        case R.id.mBtnNewCode:
-            startActivity(new Intent(this, SecondAct.class));
-            break;
+//        case R.id.mBtnNewCode:
+//            startActivity(new Intent(this, SecondAct.class));
+//            break;
         case R.id.mBtnNew: {
             String code = mTvPWD.getText().toString();
             if (TextUtils.isEmpty(code) || code.equals("")) {

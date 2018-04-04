@@ -95,12 +95,12 @@
         android:visibility="gone"/>
 
 
-    <Button
-        android:id="@+id/mBtnNewCode"
-        style="@style/btnYellow"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="20dp"
-        android:text="复制序列号"/>
+    <!--<Button-->
+        <!--android:id="@+id/mBtnNewCode"-->
+        <!--style="@style/btnYellow"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="复制序列号"/>-->
 
 </LinearLayout>

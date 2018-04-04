@@ -10,8 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.accessibility.R;
-import com.accessibility.utils.PWDUtil;
-import com.k12lib.afast.log.Logger;
 
 import z.frame.BaseAct;
 
@@ -54,13 +52,13 @@ public class SecondAct extends BaseAct {
     public void onClick(View v) {
         switch (v.getId()) {
         case R.id.mBtnNew:
-            long tm = PWDUtil.checkTimes(mCode);
-            String devid = PWDUtil.parseDeviceID(mCode,0);
-            mTvPWD.setText(tm+"");
-            long newtm = tm + 60*60*24*30;
-            String actCode = PWDUtil.encryption2(devid,String.valueOf(tm),String.valueOf(newtm));
-            Logger.i(TAG, "log devid=" + devid+", tm="+tm+", newtm="+newtm+", actCode="+actCode);
-            mTvAct.setText(actCode);
+//            long tm = PWDUtil.checkTimes(mCode);
+//            String devid = PWDUtil.parseDeviceID(mCode,0);
+//            mTvPWD.setText(tm+"");
+//            long newtm = tm + 60*60*24*30;
+//            String actCode = PWDUtil.encryption2(devid,String.valueOf(tm),String.valueOf(newtm));
+//            Logger.i(TAG, "log devid=" + devid+", tm="+tm+", newtm="+newtm+", actCode="+actCode);
+//            mTvAct.setText(actCode);
             break;
         case R.id.mBtnCopy:
             ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);

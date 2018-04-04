@@ -52,32 +52,32 @@ public class PWDUtil implements ICommon {
         return sb.toString();
     }
 
-    public static String encryption2(String deviceId, String oldtms, String newtms) {
-        Logger.i(TAG, "deviceId=" + deviceId + ", oldtms=" + oldtms+ ", newtms=" + newtms);
-        int randomLen = new Random().nextInt(11);
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < randomLen; i++) {
-            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
-        }
-        for (int i = 0; i < deviceId.length(); i++) {
-            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]).append(deviceId.charAt(i));
-        }
-        char[] oldArr = oldtms.toCharArray();
-        for (int i = 0; i < oldArr.length; i++) {
-            char a = oldArr[i];
-            String b = mCodeX[Integer.parseInt(a + "")];
-            sb.append(b).append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
-        }
-        char[] newArr = newtms.toCharArray();
-        for (int i = 0; i < newArr.length; i++) {
-            char a = newArr[i];
-            String b = mCodeX[Integer.parseInt(a + "")];
-            sb.append(b).append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
-        }
-        sb.append(randomLen);
-        Logger.i(TAG, "desc=" + sb.toString());
-        return sb.toString();
-    }
+//    public static String encryption2(String deviceId, String oldtms, String newtms) {
+//        Logger.i(TAG, "deviceId=" + deviceId + ", oldtms=" + oldtms+ ", newtms=" + newtms);
+//        int randomLen = new Random().nextInt(11);
+//        StringBuilder sb = new StringBuilder();
+//        for (int i = 0; i < randomLen; i++) {
+//            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
+//        }
+//        for (int i = 0; i < deviceId.length(); i++) {
+//            sb.append(mCodeY[new Random().nextInt(mCodeY.length - 1)]).append(deviceId.charAt(i));
+//        }
+//        char[] oldArr = oldtms.toCharArray();
+//        for (int i = 0; i < oldArr.length; i++) {
+//            char a = oldArr[i];
+//            String b = mCodeX[Integer.parseInt(a + "")];
+//            sb.append(b).append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
+//        }
+//        char[] newArr = newtms.toCharArray();
+//        for (int i = 0; i < newArr.length; i++) {
+//            char a = newArr[i];
+//            String b = mCodeX[Integer.parseInt(a + "")];
+//            sb.append(b).append(mCodeY[new Random().nextInt(mCodeY.length - 1)]);
+//        }
+//        sb.append(randomLen);
+//        Logger.i(TAG, "desc=" + sb.toString());
+//        return sb.toString();
+//    }
 
     //解密 固定码+mac地址+结束时间戳
     public static boolean decrypt(String code) {
