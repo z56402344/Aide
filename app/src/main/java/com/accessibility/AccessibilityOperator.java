@@ -7,6 +7,7 @@ import android.content.Context;
 import android.os.Build;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
+import android.view.accessibility.AccessibilityWindowInfo;
 
 import com.accessibility.utils.AccessibilityLog;
 
@@ -56,16 +57,31 @@ public class AccessibilityOperator {
     }
 
     private AccessibilityNodeInfo getRootNodeInfo() {
+        if (mAccessibilityEvent == null || mAccessibilityService == null){
+            return null;
+        }
         AccessibilityEvent curEvent = mAccessibilityEvent;
         AccessibilityNodeInfo nodeInfo = null;
-        if (Build.VERSION.SDK_INT >= 16) {
-            // 建议使用getRootInActiveWindow，这样不依赖当前的事件类型
+        if (Build.VERSION.SDK_INT >= 21) {
+            //1.sdk21,系统大于等于6.0以上使用这个方法getWindows()获取到多个AccessibilityWindowInfo
+            //2.debug知道MI4手机的第二个元素是当前app的window，所有listWindowInfo.get(1)获取到AccessibilityWindowInfo
+            //3.
+            List<AccessibilityWindowInfo> listWindowInfo = mAccessibilityService.getWindows();
+            if (listWindowInfo != null && listWindowInfo.size() > 0){
+                AccessibilityWindowInfo windowInfo =  listWindowInfo.get(listWindowInfo.size() - 1);
+                nodeInfo = windowInfo.getRoot();
+                AccessibilityLog.printLog("nodeInfo: " + nodeInfo);
+            }
+        }else if (Build.VERSION.SDK_INT >= 16) {
+            // 使用getRootInActiveWindow，这样不依赖当前的事件类型，但是有些时候不一定能够获取到对应的AccessibilityNodeInfo对象找不到对应的元素
             if (mAccessibilityService != null) {
                 nodeInfo = mAccessibilityService.getRootInActiveWindow();
                 AccessibilityLog.printLog("nodeInfo: " + nodeInfo);
             }
             // 下面这个必须依赖当前的AccessibilityEvent
-//            nodeInfo = curEvent.getSource();
+//            if(curEvent!= null && (nodeInfo == null || nodeInfo.getChildCount() == 0)){
+//                nodeInfo = curEvent.getSource();
+//            }
         } else {
             nodeInfo = curEvent.getSource();
         }
@@ -121,9 +137,26 @@ public class AccessibilityOperator {
                 node = nodeInfos.get(i);
                 // 获得点击View的类型
                 AccessibilityLog.printLog("View类型：" + node.getClassName());
+                AccessibilityLog.printLog("修改click前，node.isEnabled()=" + node.isEnabled()+"， node.isClickable()"+node.isClickable());
+//                if (!node.isClickable()){
+                    //setContextClickable(),这个方法不管用
+//                    node.setContextClickable(true);
+//                }
+//                AccessibilityLog.printLog("修改click后，node.isEnabled()=" + node.isEnabled()+"， node.isClickable()"+node.isClickable());
                 // 进行模拟点击
                 if (node.isEnabled()) {
-                    return node.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                    //1.首先获取目标节点是否可以可以点击isClickable()=true,如果可以点击，点击肯定成功
+                    //2.如果isClickable()=false,则获取到其父布局查询是否可以点击，否则继续找其父布局
+                    //说明：如果这个按钮或者TextView手动可以点击的情况下，则其父布局中至少有一个的isClickable()=true的
+                    boolean isSuccess = node.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                    AccessibilityLog.printLog("isSuccess)=" + isSuccess);
+                    if (!isSuccess){
+                        isSuccess = node.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                    }
+                    AccessibilityLog.printLog("Parent isSuccess)=" + isSuccess);
+
+
+                    return isSuccess;
                 }
             }
         }
