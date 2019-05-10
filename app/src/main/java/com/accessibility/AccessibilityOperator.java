@@ -116,7 +116,7 @@ public class AccessibilityOperator {
     }
 
     public boolean clickByText(String text) {
-        return performClick(findNodesByText(text));
+        return performClickText(findNodesByText(text),text);
     }
 
     /**
@@ -136,6 +136,9 @@ public class AccessibilityOperator {
             for (int i = 0; i < nodeInfos.size(); i++) {
                 node = nodeInfos.get(i);
                 // 获得点击View的类型
+                if (node == null){
+                    return false;
+                }
                 AccessibilityLog.printLog("View类型：" + node.getClassName());
                 AccessibilityLog.printLog("修改click前，node.isEnabled()=" + node.isEnabled()+"， node.isClickable()"+node.isClickable());
 //                if (!node.isClickable()){
@@ -152,10 +155,52 @@ public class AccessibilityOperator {
                     AccessibilityLog.printLog("isSuccess)=" + isSuccess);
                     if (!isSuccess){
                         isSuccess = node.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                        node = node.getParent();
                     }
-                    AccessibilityLog.printLog("Parent isSuccess)=" + isSuccess);
+                    AccessibilityLog.printLog("Parent isSuccess=" + isSuccess);
+                    if (!isSuccess){
+                        isSuccess = node.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                    }
+                    AccessibilityLog.printLog("Parent.Parent isSuccess=" + isSuccess);
 
 
+                    return isSuccess;
+                }
+            }
+        }
+        return false;
+    }
+
+    private boolean performClickText(List<AccessibilityNodeInfo> nodeInfos, String targeText) {
+        if (nodeInfos != null && !nodeInfos.isEmpty()) {
+            AccessibilityNodeInfo node;
+            for (int i = 0; i < nodeInfos.size(); i++) {
+                node = nodeInfos.get(i);
+                // 获得点击View的类型
+                if (node == null || !node.getText().equals(targeText)){
+                    continue;
+                }
+                AccessibilityLog.printLog("View类型：" + node.getClassName());
+                AccessibilityLog.printLog("修改click前，node.isEnabled()=" + node.isEnabled()+"， node.isClickable()"+node.isClickable());
+//                if (!node.isClickable()){
+                //setContextClickable(),这个方法不管用
+//                    node.setContextClickable(true);
+//                }
+//                AccessibilityLog.printLog("修改click后，node.isEnabled()=" + node.isEnabled()+"， node.isClickable()"+node.isClickable());
+                // 进行模拟点击
+                if (node.isEnabled()) {
+                    //1.首先获取目标节点是否可以可以点击isClickable()=true,如果可以点击，点击肯定成功
+                    //2.如果isClickable()=false,则获取到其父布局查询是否可以点击，否则继续找其父布局
+                    //说明：如果这个按钮或者TextView手动可以点击的情况下，则其父布局中至少有一个的isClickable()=true的
+                    boolean isSuccess = node.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                    AccessibilityLog.printLog("isSuccess)=" + isSuccess);
+                    int count = 0;
+                    while (!isSuccess&&count<6){
+                        isSuccess = node.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                        node = node.getParent();
+                        count++;
+                        AccessibilityLog.printLog("Parent isSuccess=" + isSuccess+", count="+count);
+                    }
                     return isSuccess;
                 }
             }

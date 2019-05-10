@@ -1,0 +1,518 @@
+TASK me.ele.crowdsource id=417
+  ACTIVITY me.ele.crowdsource/.components.user.home.HomeActivity 4c0c517 pid=16331
+    Local Activity cd8893b State:
+      mResumed=true mStopped=false mFinished=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 ?mcc?mnc zh_CN ldltr sw360dp w360dp h620dp 480dpi nrml long port finger -keyb/v/h -nav/h s.4 themeChanged=0 themeChangedFlags=0}
+      mLoadersStarted=true
+      Active Fragments in c3c9074:
+        #0: ReportFragment{785099d #0 android.arch.lifecycle.LifecycleDispatcher.report_fragment_tag}
+          mFragmentId=#0 mContainerId=#0 mTag=android.arch.lifecycle.LifecycleDispatcher.report_fragment_tag
+          mState=5 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+          mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+          mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+          mRetainInstance=false mRetaining=false mUserVisibleHint=true
+          mFragmentManager=FragmentManager{c3c9074 in HostCallbacks{9011e12}}
+          mHost=android.app.Activity$HostCallbacks@9011e12
+          Child FragmentManager{8f79e3 in ReportFragment{785099d}}:
+            FragmentManager misc state:
+              mHost=android.app.Activity$HostCallbacks@9011e12
+              mContainer=android.app.Fragment$1@ccc3fe0
+              mParent=ReportFragment{785099d #0 android.arch.lifecycle.LifecycleDispatcher.report_fragment_tag}
+              mCurState=5 mStateSaved=false mDestroyed=false
+      Added Fragments:
+        #0: ReportFragment{785099d #0 android.arch.lifecycle.LifecycleDispatcher.report_fragment_tag}
+      FragmentManager misc state:
+        mHost=android.app.Activity$HostCallbacks@9011e12
+        mContainer=android.app.Activity$HostCallbacks@9011e12
+        mCurState=5 mStateSaved=false mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=true
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=true
+      mLastFrameTime=4220357 (10 ms ago)
+    View Hierarchy:
+      com.android.internal.policy.PhoneWindow$DecorView{151fa81 V.E...... R....... 0,0-1080,1920}
+        android.widget.LinearLayout{2c88fb2 V.E...... ........ 0,0-1080,1920}
+          android.view.ViewStub{5ada299 G.E...... ......I. 0,0-0,0 #10203ba android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{522bdbd V.E...... ........ 0,0-1080,1920}
+            android.support.v7.widget.FitWindowsLinearLayout{aee0114 V.E...... ........ 0,0-1080,1920 #7f090016 app:id/w}
+              android.support.v7.widget.ViewStubCompat{dcf095e G.E...... ......I. 0,0-0,0 #7f090029 app:id/ae}
+              android.support.v7.widget.ContentFrameLayout{6cf6f67 V.E...... ........ 0,0-1080,1920 #1020002 android:id/content}
+                android.widget.LinearLayout{b012726 V.E...... ........ 0,0-1080,1920 #7f0902ec app:id/tm}
+                  android.widget.FrameLayout{bb33b28 V.E...... ........ 0,60-1080,1920}
+                    android.widget.RelativeLayout{163b54b V.E...... ........ 0,0-1080,1860 #7f0902ed app:id/tn}
+                      android.widget.RelativeLayout{46b93ad V.E...... ........ 0,0-1080,168 #7f0902f3 app:id/tt}
+                        android.support.v7.widget.Toolbar{d9ac6e2 V.E...... ........ 0,0-1080,168 #7f0902f4 app:id/tu}
+                          android.support.v7.widget.AppCompatImageButton{84bba73 VFED..C.. ........ 0,0-168,168}
+                          android.support.v7.widget.ActionMenuView{e14640b V.E...... ........ 792,0-1080,168}
+                            android.support.v7.view.menu.ActionMenuItemView{8f99973 VFED..CL. ........ 0,12-144,156 #7f090022 app:id/a8}
+                            android.support.v7.view.menu.ActionMenuItemView{f99030 VFED..CL. ........ 144,12-288,156 #7f09002d app:id/ai}
+                        android.widget.RelativeLayout{bdabda9 V.E...... ........ 0,0-168,168}
+                          android.support.v7.widget.AppCompatTextView{2b5d13f G.ED..... ......I. 0,0-0,0 #7f0901cd app:id/lt}
+                        android.widget.RelativeLayout{ba26f2e V.E...... ........ 912,0-1080,168}
+                          me.ele.crowdsource.foundations.ui.NumberIndicatorView{d9d8acf V.ED..... ........ 106,27-153,69 #7f090974 app:id/b1z}
+                        android.widget.RelativeLayout{7795c5c V.E...C.. ........ 423,32-657,135 #7f0906e9 app:id/akb}
+                          android.support.v7.widget.AppCompatTextView{3f88b65 V.ED..... ........ 36,15-198,88 #7f0902f5 app:id/tw}
+                          com.airbnb.lottie.LottieAnimationView{6a503a V.ED..... ........ 210,36-234,66 #7f09041c app:id/a1x}
+                      me.ele.crowdsource.foundations.utils.statusbar.CommonScrollView{2e57a0c GFED..... ......ID 0,0-0,0 #7f09016b app:id/j5}
+                        android.widget.RelativeLayout{82ccf55 V.E...... ......I. 0,0-0,0}
+                          android.widget.LinearLayout{2fe5d6a V.E...... ......ID 0,0-0,0 #7f09048c app:id/a4y}
+                            android.widget.LinearLayout{c0425b V.E...... ......I. 0,0-0,0}
+                              android.widget.LinearLayout{3762af8 G.E...... ......I. 0,0-0,0 #7f09048d app:id/a4z}
+                                android.widget.RelativeLayout{e380bd1 V.E...... ......I. 0,0-0,0}
+                                  android.support.v7.widget.AppCompatTextView{61ce636 V.ED..... ......ID 0,0-0,0 #7f09086f app:id/auw}
+                                  android.support.v7.widget.AppCompatTextView{c36a937 V.ED..... ......I. 0,0-0,0 #7f090874 app:id/av2}
+                                android.support.v7.widget.AppCompatTextView{25efea4 V.ED..... ......ID 0,0-0,0 #7f09086b app:id/aus}
+                              android.widget.LinearLayout{ae0940d V.E...... ......I. 0,0-0,0}
+                                android.widget.RelativeLayout{dc92fc2 V.E...... ......I. 0,0-0,0}
+                                  android.support.v7.widget.AppCompatTextView{d42a1d3 V.ED..... ......ID 0,0-0,0 #7f09086c app:id/aut}
+                                  android.support.v7.widget.AppCompatTextView{edf6110 V.ED..... ......I. 0,0-0,0 #7f090871 app:id/auz}
+                                android.support.v7.widget.AppCompatTextView{70f6409 V.ED..... ......ID 0,0-0,0 #7f090868 app:id/aup}
+                              android.widget.LinearLayout{9fe860e V.E...... ......I. 0,0-0,0 #7f09048e app:id/a50}
+                                android.widget.RelativeLayout{b0b882f V.E...... ......I. 0,0-0,0}
+                                  android.support.v7.widget.AppCompatTextView{ac17e3c V.ED..... ......ID 0,0-0,0 #7f09086d app:id/auu}
+                                  android.support.v7.widget.AppCompatTextView{74137c5 V.ED..... ......I. 0,0-0,0 #7f090872 app:id/av0}
+                                android.support.v7.widget.AppCompatTextView{d20f51a V.ED..... ......ID 0,0-0,0 #7f090869 app:id/auq}
+                              android.widget.LinearLayout{dd2784b V.E...... ......I. 0,0-0,0 #7f09048f app:id/a51}
+                                android.widget.RelativeLayout{8464228 V.E...... ......I. 0,0-0,0}
+                                  android.support.v7.widget.AppCompatTextView{1028b41 V.ED..... ......ID 0,0-0,0 #7f09086e app:id/auv}
+                                  android.support.v7.widget.AppCompatTextView{9c948e6 V.ED..... ......I. 0,0-0,0 #7f090873 app:id/av1}
+                                android.support.v7.widget.AppCompatTextView{6ce4e27 V.ED..... ......ID 0,0-0,0 #7f09086a app:id/aur}
+                            android.widget.LinearLayout{ad158d4 V.E...... ......I. 0,0-0,0}
+                              android.support.v7.widget.AppCompatImageView{c2b9a7d V.ED..... ......I. 0,0-0,0 #7f0903ba app:id/z_}
+                              android.support.v7.widget.AppCompatTextView{1510d72 V.ED..... ......ID 0,0-0,0 #7f090867 app:id/auo}
+                          android.view.View{9c7a5c3 V.ED..... ......ID 0,0-0,0 #7f090aa3 app:id/b_6}
+                          android.widget.LinearLayout{6552e40 G.E...... ......I. 0,0-0,0 #7f0904fe app:id/a81}
+                            android.support.v7.widget.AppCompatImageView{bdc6179 V.ED..... ......I. 0,0-0,0}
+                            android.support.v7.widget.AppCompatTextView{f1e8ebe V.ED..... ......ID 0,0-0,0}
+                          android.support.v7.widget.CardView{474db1f V.E...... ......I. 0,0-0,0 #7f090117 app:id/gu}
+                            android.widget.LinearLayout{97eee6c V.E...... ......I. 0,0-0,0}
+                              android.widget.LinearLayout{b389c35 V.E...... ......I. 0,0-0,0}
+                                android.support.v7.widget.AppCompatImageView{cb0d8ca V.ED..... ......I. 0,0-0,0}
+                                android.support.v7.widget.AppCompatTextView{f960a3b V.ED..... ......ID 0,0-0,0}
+                                android.widget.LinearLayout{ea28558 V.E...C.. ......I. 0,0-0,0 #7f0904f4 app:id/a7r}
+                                  android.support.v7.widget.AppCompatTextView{9e3c6b1 V.ED..... ......ID 0,0-0,0}
+                                  android.support.v7.widget.AppCompatImageView{a6bb796 V.ED..... ......I. 0,0-0,0}
+                              android.view.View{5d10f17 V.ED..... ......ID 0,0-0,0}
+                              android.widget.LinearLayout{f669f04 V.E...... ......I. 0,0-0,0 #7f0904ad app:id/a5u}
+                          android.support.v7.widget.CardView{43d1ced V.E...... ......I. 0,0-0,0 #7f090116 app:id/gt}
+                            android.widget.LinearLayout{923b722 V.E...... ......I. 0,0-0,0}
+                              android.widget.LinearLayout{c4d85b3 V.E...... ......I. 0,0-0,0}
+                                android.support.v7.widget.AppCompatImageView{730a770 V.ED..... ......I. 0,0-0,0}
+                                android.support.v7.widget.AppCompatTextView{35b9ae9 V.ED..... ......ID 0,0-0,0}
+                                android.widget.LinearLayout{6a236e V.E...C.. ......I. 0,0-0,0 #7f0904f3 app:id/a7q}
+                                  android.support.v7.widget.AppCompatTextView{910ca0f V.ED..... ......ID 0,0-0,0}
+                                  android.support.v7.widget.AppCompatImageView{50ca9c V.ED..... ......I. 0,0-0,0}
+                              android.view.View{c9fca5 V.ED..... ......ID 0,0-0,0}
+                              android.widget.LinearLayout{d99087a V.E...... ......I. 0,0-0,0 #7f090494 app:id/a56}
+                      android.support.v7.widget.CardView{319f82b G.E...C.. ......I. 0,0-0,0 #7f090971 app:id/b1w}
+                        android.support.v7.widget.AppCompatTextView{7edf488 V.ED..... ......I. 0,0-0,0 #7f090970 app:id/b1v}
+                      android.widget.FrameLayout{d6d061a V.E...... ........ 0,168-1080,1860 #7f090261 app:id/pv}
+                        android.widget.LinearLayout{1deecc5 V.E...... ........ 0,0-1080,1692}
+                          me.ele.crowdsource.foundations.ui.PagerSlidingTabStrip{3b77693 VFED..... ........ 0,0-1080,95 #7f090aef app:id/bb8}
+                            android.widget.LinearLayout{7ed5f82 V.E...... ........ 0,0-1080,95}
+                              me.ele.crowdsource.foundations.ui.PagerSlidingTabStrip$e{fafb732 V.E...C.. ..S..... 0,0-360,95}
+                                android.widget.RelativeLayout{a4e6c83 V.E...... ..S..... 85,0-274,95}
+                                  android.support.v7.widget.AppCompatTextView{8c64e00 V.ED..... ..S..... 0,0-144,95 #7f090a21 app:id/b6n}
+                                  com.airbnb.lottie.LottieAnimationView{80905ad V.ED..... ..S..... 159,23-189,71 #7f090360 app:id/wu}
+                              me.ele.crowdsource.foundations.ui.PagerSlidingTabStrip$e{c336639 V.E...C.. ........ 360,0-720,95}
+                                android.widget.RelativeLayout{41e147e V.E...... ........ 108,0-252,95}
+                                  android.support.v7.widget.AppCompatTextView{2814ddf V.ED..... ........ 0,0-144,95 #7f090a21 app:id/b6n}
+                                  com.airbnb.lottie.LottieAnimationView{1237287 G.ED..... ......I. 0,0-0,0 #7f090360 app:id/wu}
+                              me.ele.crowdsource.foundations.ui.PagerSlidingTabStrip$e{424a2c V.E...C.. ........ 720,0-1080,95}
+                                android.widget.RelativeLayout{8db2cf5 V.E...... ........ 108,0-252,95}
+                                  android.support.v7.widget.AppCompatTextView{782fa8a V.ED..... ........ 0,0-144,95 #7f090a21 app:id/b6n}
+                                  com.airbnb.lottie.LottieAnimationView{46715b4 G.ED..... ......I. 0,0-0,0 #7f090360 app:id/wu}
+                          me.ele.crowdsource.foundations.ui.BannerViewFlipper{f8cb260 V.E...... ........ 0,95-1080,170 #7f090acf app:id/bac}
+                            me.ele.crowdsource.foundations.ui.as{3816319 G.E...C.. ........ 0,0-1080,75}
+                              android.widget.LinearLayout{89effde V.E...... ........ 0,0-1080,75 #7f090481 app:id/a4n}
+                                android.support.v7.widget.AppCompatImageView{15cc5bf V.ED..... ........ 30,16-72,58 #7f0903b0 app:id/z0}
+                                me.ele.crowdsource.foundations.ui.EventRefreshTextView{886c16f V.ED..... ........ 87,0-1008,75 #7f090a32 app:id/b74}
+                                android.support.v7.widget.AppCompatImageView{97a948c V.ED..C.. ........ 1008,16-1080,58 #7f0903b1 app:id/z1}
+                            me.ele.crowdsource.foundations.ui.as{ff0833b V.E...C.. ........ 0,0-1080,75}
+                              android.widget.LinearLayout{9c9bde0 V.E...... ........ 0,0-1080,75 #7f090481 app:id/a4n}
+                                android.support.v7.widget.AppCompatImageView{e004899 V.ED..... ........ 30,16-72,58 #7f0903b0 app:id/z0}
+                                me.ele.crowdsource.foundations.ui.EventRefreshTextView{e7595ca V.ED..... ........ 87,0-1008,75 #7f090a32 app:id/b74}
+                                android.support.v7.widget.AppCompatImageView{b93b75e V.ED..C.. ........ 1008,16-1080,58 #7f0903b1 app:id/z1}
+                          android.support.v7.widget.AppCompatImageView{2bc17d5 V.ED..... ........ 0,170-1080,172}
+                          me.ele.crowdsource.foundations.ui.ViewPagerCompat{d20e73c VFED..... ........ 0,172-1080,1533 #7f090ae6 app:id/baz}
+                            android.widget.FrameLayout{498b39c V.E...... ........ 0,0-1080,1361}
+                              android.widget.RelativeLayout{88b4f6e G.E...... ......ID 0,0-0,0}
+                                android.support.v7.widget.AppCompatTextView{83dec07 V.ED..... ......ID 0,0-0,0 #7f0905b8 app:id/ac2}
+                                android.support.v7.widget.AppCompatImageView{4b1d134 V.ED..... ......I. 0,0-0,0 #7f090356 app:id/wk}
+                              android.support.v4.widget.SwipeRefreshLayout{d52b70f V.ED..... ........ 0,0-1080,1361 #7f090795 app:id/ap0}
+                                android.widget.FrameLayout{7fba46e V.E...... ........ 0,0-1080,1361}
+                                  android.widget.LinearLayout{d173bea V.E...... ........ 0,0-1080,1361}
+                                    me.ele.crowdsource.foundations.ui.CustomBannerItem{fac1b5d G.E...... ......I. 0,0-0,0 #7f09007b app:id/cm}
+                                      android.widget.LinearLayout{38c2cd2 V.E...... ......ID 0,0-0,0}
+                                        android.support.v7.widget.AppCompatTextView{4c341a3 V.ED..... ......ID 0,0-0,0 #7f090a32 app:id/b74}
+                                        android.support.v7.widget.AppCompatImageView{c34cca0 V.ED..C.. ......I. 0,0-0,0 #7f0903af app:id/yz}
+                                    android.support.v7.widget.RecyclerView{821fedb VFED.V... .F...... 0,0-1080,1361 #7f0905f1 app:id/adm}
+                                      android.widget.FrameLayout{2cb75fc V.E...... ........ 0,30-1080,141}
+                                        android.widget.RelativeLayout{b7c3485 V.E...... ........ 0,0-1080,111}
+                                          android.widget.RelativeLayout{fc112da V.E...... ........ 0,0-1080,111 #7f0906e3 app:id/ak6}
+                                            android.support.v7.widget.AppCompatImageView{43e1c9c V.ED..... ........ 0,0-54,54 #7f0902e4 app:id/te}
+                                            android.support.v7.widget.AppCompatImageView{78fa30b V.ED..... ........ 48,54-96,102 #7f090361 app:id/wv}
+                                            me.ele.crowdsource.foundations.ui.ShapeTextView{157f5e8 V.ED..... ........ 123,54-419,111 #7f0908a9 app:id/awh}
+                                            android.support.v7.widget.AppCompatTextView{8d09401 V.ED..... ........ 911,35-1032,111 #7f0905e5 app:id/ad_}
+                                            android.support.v7.widget.AppCompatTextView{f41d183 G.ED..... ......I. 123,123-339,165 #7f09095b app:id/b1a}
+                                          android.widget.LinearLayout{c941059 G.E...... ......I. 0,0-0,0 #7f0904a1 app:id/a5i}
+                                            android.widget.FrameLayout{5dc441e V.E...... ......I. 0,0-0,0}
+                                              android.view.View{8be54ff V.ED..... ......ID 0,0-0,0}
+                                      android.widget.RelativeLayout{f794566 V.E...... ........ 0,141-1080,619}
+                                        android.widget.LinearLayout{cabd0a7 V.E...C.. ........ 0,0-1080,478 #7f0906f2 app:id/akk}
+                                          android.widget.RelativeLayout{6e4e954 V.E...... ........ 36,42-1032,430 #7f0906a9 app:id/ail}
+                                            android.widget.LinearLayout{98720fd V.E...... ........ 0,0-75,65 #7f0904c8 app:id/a6k}
+                                              android.support.v7.widget.AppCompatTextView{b4451f2 V.ED..... ........ 11,0-63,42 #7f090958 app:id/b18}
+                                              android.support.v7.widget.AppCompatTextView{3ad043 V.ED..... ........ 17,42-58,65 #7f0908a8 app:id/awg}
+                                            android.widget.LinearLayout{b5146c0 V.E...... ........ 0,89-75,210 #7f09049f app:id/a5g}
+                                              android.support.v7.widget.AppCompatImageView{da9cff9 V.ED..... ........ 33,0-39,121}
+                                            android.widget.LinearLayout{2419b3e V.E...... ........ 0,234-75,299 #7f0904cb app:id/a6n}
+                                              android.support.v7.widget.AppCompatTextView{3302d9f V.ED..... ........ 11,0-63,42 #7f090956 app:id/b16}
+                                              android.support.v7.widget.AppCompatTextView{1640eec V.ED..... ........ 17,42-58,65 #7f090957 app:id/b17}
+                                            android.widget.LinearLayout{aae72b5 V.E...... ........ 89,0-996,207 #7f0904c9 app:id/a6l}
+                                              me.ele.crowdsource.foundations.ui.SpacingNoColorTextView{382d4a V.ED..... ........ 0,0-570,71 #7f090953 app:id/b13}
+                                              android.support.v7.widget.AppCompatTextView{6f404bb V.ED..... ........ 0,89-907,195 #7f090951 app:id/b11}
+                                            android.widget.LinearLayout{2f92dd8 V.E...... ........ 89,234-996,388 #7f090499 app:id/a5a}
+                                              me.ele.crowdsource.foundations.ui.SpacingNoColorTextView{d208531 V.ED..... ........ 0,0-907,154 #7f0908a2 app:id/awa}
+                                            android.widget.LinearLayout{32a12cc G.E...C.. ......I. 0,0-0,0 #7f09052a app:id/a98}
+                                              android.support.v7.widget.AppCompatTextView{6c5915 V.ED..... ......ID 0,0-0,0 #7f0908b8 app:id/aww}
+                                              android.support.v7.widget.AppCompatImageView{c84842a V.ED..... ......I. 0,0-0,0 #7f09034d app:id/wb}
+                                            android.support.v7.widget.AppCompatTextView{72d421b G.ED..... ......I. 0,0-0,0 #7f0908a5 app:id/awd}
+                                            me.ele.crowdsource.components.order.orderlist.DoubtfulTipsView{44b8fb8 G.E...... ......I. 0,0-0,0 #7f0901cf app:id/lv}
+                                              android.widget.RelativeLayout{a467191 V.E...... ......I. 0,0-0,0}
+                                                android.widget.LinearLayout{dbeb8f6 V.E...... ......I. 0,0-0,0 #7f0904ff app:id/a82}
+                                                  android.support.v7.widget.AppCompatTextView{ad3e4f7 V.ED..... ......ID 0,0-0,0 #7f090a32 app:id/b74}
+                                                  android.support.v7.widget.AppCompatImageView{a05ef64 V.ED..... ......I. 0,0-0,0 #7f09034b app:id/w_}
+                                          android.widget.LinearLayout{616a988 G.E...... ......ID 36,330-1032,476 #7f0904d9 app:id/a71}
+                                            android.widget.RelativeLayout{67dcf21 G.E...... ......I. 24,24-972,122 #7f0906da app:id/ajx}
+                                              android.support.v7.widget.AppCompatTextView{d336f46 V.ED..... ........ 0,0-116,49 #7f090a3a app:id/b7b}
+                                              android.support.v7.widget.AppCompatTextView{f1e507 V.ED..... ........ 116,0-948,98 #7f0909c1 app:id/b42}
+                                            android.widget.LinearLayout{ecf95cd G.E...... ......I. 0,0-0,0 #7f09067d app:id/ahe}
+                                              android.widget.LinearLayout{7956e82 V.E...... ......I. 0,0-0,0 #7f0904e3 app:id/a7a}
+                                                android.support.v7.widget.AppCompatTextView{cd7d993 V.ED..... ......ID 0,0-0,0 #7f090a3c app:id/b7d}
+                                                android.support.v7.widget.AppCompatTextView{6e49dd0 V.ED..... ......I. 0,0-0,0 #7f0909ce app:id/b4e}
+                                              android.widget.LinearLayout{64cc1c9 V.E...... ......I. 0,0-0,0 #7f0904e4 app:id/a7b}
+                                                android.support.v7.widget.AppCompatTextView{c2ff0ce V.ED..... ......ID 0,0-0,0 #7f090a3b app:id/b7c}
+                                                android.support.v7.widget.AppCompatTextView{91c7bef V.ED..... ......I. 0,0-0,0 #7f0909cd app:id/b4d}
+                                          me.ele.crowdsource.foundations.ui.FlowLayout{2c0c0e G.E...... ......ID 36,500-1032,560 #7f090272 app:id/qb}
+                                            android.widget.TextView{7f5b5f0 V.ED..... ......ID 0,0-96,60}
+                                        android.widget.RelativeLayout{8bdc6fc G.E...... ......I. 0,0-0,0 #7f0906e5 app:id/ak8}
+                                          android.support.v7.widget.AppCompatTextView{e56b185 V.ED..... ......ID 0,0-0,0 #7f090843 app:id/atp}
+                                          android.support.v7.widget.AppCompatImageView{6de4bda V.ED..... ......I. 0,0-0,0 #7f0903b4 app:id/z4}
+                                        android.widget.RelativeLayout{c5ee80b G.E...... ......I. 0,0-0,0 #7f0906c2 app:id/aj_}
+                                          android.support.v7.widget.AppCompatTextView{29e56e8 V.ED..... ......ID 0,0-0,0 #7f090842 app:id/ato}
+                                          android.support.v7.widget.AppCompatImageView{b55e101 V.ED..... ......I. 0,0-0,0 #7f0903b3 app:id/z3}
+                                        me.ele.crowdsource.components.order.widget.card.OrderOfflineArriveMask{5e54ba6 G.E...... ......I. 0,0-0,0 #7f0905cf app:id/aco}
+                                          android.widget.LinearLayout{811f9e7 V.E...... ......I. 0,0-0,0}
+                                            android.support.v7.widget.AppCompatImageView{975f994 V.ED..... ......I. 0,0-0,0}
+                                            android.support.v7.widget.AppCompatTextView{5be8c3d V.ED..... ......ID 0,0-0,0}
+                                            android.support.v7.widget.AppCompatTextView{50a7c32 V.ED..... ......ID 0,0-0,0}
+                                      android.support.constraint.ConstraintLayout{b5227a9 V.E...... ........ 0,619-1080,769}
+                                        android.support.constraint.Guideline{fc6912e G.ED..... ......I. 356,0-356,0 #7f0902c9 app:id/so}
+                                        android.support.constraint.Guideline{f5c04cf G.ED..... ......I. 713,0-713,0 #7f0902ca app:id/sp}
+                                        android.widget.LinearLayout{7fa4d83 G.E...C.. ......I. 0,0-0,0 #7f09048b app:id/a4x}
+                                          android.support.v7.widget.AppCompatTextView{f831b00 V.ED..... ......ID 0,0-0,0 #7f0905d9 app:id/acy}
+                                          android.support.v7.widget.AppCompatTextView{f0caf39 G.ED..... ......ID 0,0-0,0 #7f0905ef app:id/adk}
+                                        me.ele.crowdsource.foundations.ui.MessageIndicatorView{4e0297e G.E...... ......I. 0,0-0,0 #7f09032e app:id/vg}
+                                          android.support.v7.widget.AppCompatTextView{58a3edf V.ED..... ......I. 0,0-0,0}
+                                          me.ele.crowdsource.foundations.ui.NumberIndicatorView{a7ee72c V.ED..... ......I. 0,0-0,0}
+                                        me.ele.crowdsource.foundations.utils.statusbar.SlideButton{abf4e5c V.E...C.. ........ 33,0-1032,120 #7f090151 app:id/ie}
+                                          android.widget.LinearLayout{47c9565 V.E...... ........ 0,0-999,120}
+                                            android.widget.ProgressBar{be1eeb G.ED..... ......I. 0,0-0,0 #7f09001a app:id/a0}
+                                            android.support.v7.widget.AppCompatTextView{fae923a V.ED..... ........ 448,0-550,120 #7f09084d app:id/atz}
+                                            me.ele.crowdsource.components.order.widget.ZBSlideBlockView{a8005f5 G.E...... ......I. 0,0-0,0 #7f09074e app:id/an3}
+                                              android.widget.FrameLayout{ad15f8a V.E...... ......I. 0,0-0,0}
+                                                android.support.v7.widget.AppCompatTextView{4fde9fb V.ED..... ......ID 0,0-0,0 #7f090a79 app:id/b91}
+                                                android.widget.FrameLayout{894a18 V.E...... ......I. 0,0-0,0 #7f09044c app:id/a38}
+                                                  android.support.v7.widget.AppCompatImageView{5980c71 V.ED..... ......I. 0,0-0,0 #7f090341 app:id/w0}
+                                      android.widget.FrameLayout{9a5faf6 V.E...... ........ 0,799-1080,910}
+                                        android.widget.RelativeLayout{e66fef7 V.E...... ........ 0,0-1080,111}
+                                          android.widget.RelativeLayout{d940164 V.E...... ........ 0,0-1080,111 #7f0906e3 app:id/ak6}
+                                            android.support.v7.widget.AppCompatImageView{7c93fcd V.ED..... ........ 0,0-54,54 #7f0902e4 app:id/te}
+                                            android.support.v7.widget.AppCompatImageView{7aed082 V.ED..... ........ 48,54-96,102 #7f090361 app:id/wv}
+                                            me.ele.crowdsource.foundations.ui.ShapeTextView{f829393 V.ED..... ........ 123,54-419,111 #7f0908a9 app:id/awh}
+                                            android.support.v7.widget.AppCompatTextView{a41cfd0 V.ED..... ........ 911,35-1032,111 #7f0905e5 app:id/ad_}
+                                            android.support.v7.widget.AppCompatTextView{5edea56 G.ED..... ......ID 0,0-0,0 #7f09095b app:id/b1a}
+                                          android.widget.LinearLayout{8372ad7 G.E...... ......I. 0,0-0,0 #7f0904a1 app:id/a5i}
+                                            android.widget.FrameLayout{7d4efc4 V.E...... ......I. 0,0-0,0}
+                                              android.view.View{c4ffead V.ED..... ......ID 0,0-0,0}
+                                      android.widget.RelativeLayout{a6c7a59 V.E...... ........ 0,910-1080,1252}
+                                        android.widget.LinearLayout{74d661e V.E...C.. ........ 0,0-1080,342 #7f0906f2 app:id/akk}
+                                          android.widget.RelativeLayout{a45ceff V.E...... ........ 36,42-1032,294 #7f0906a9 app:id/ail}
+                                            android.widget.LinearLayout{d0504cc V.E...... ........ 0,0-75,65 #7f0904c8 app:id/a6k}
+                                              android.support.v7.widget.AppCompatTextView{4616315 V.ED..... ........ 11,0-63,42 #7f090958 app:id/b18}
+                                              android.support.v7.widget.AppCompatTextView{e5c62a V.ED..... ........ 17,42-58,65 #7f0908a8 app:id/awg}
+                                            android.widget.LinearLayout{2b25c1b V.E...... ........ 0,89-75,157 #7f09049f app:id/a5g}
+                                              android.support.v7.widget.AppCompatImageView{5e3a1b8 V.ED..... ........ 33,0-39,68}
+                                            android.widget.LinearLayout{9821b91 V.E...... ........ 0,181-75,246 #7f0904cb app:id/a6n}
+                                              android.support.v7.widget.AppCompatTextView{3f21af6 V.ED..... ........ 11,0-63,42 #7f090956 app:id/b16}
+                                              android.support.v7.widget.AppCompatTextView{2909ef7 V.ED..... ........ 17,42-58,65 #7f090957 app:id/b17}
+                                            android.widget.LinearLayout{20d2164 V.E...... ........ 89,0-996,154 #7f0904c9 app:id/a6l}
+                                              me.ele.crowdsource.foundations.ui.SpacingNoColorTextView{71bdfcd V.ED..... ........ 0,0-630,71 #7f090953 app:id/b13}
+                                              android.support.v7.widget.AppCompatTextView{a9cf082 V.ED..... ........ 0,89-907,142 #7f090951 app:id/b11}
+                                            android.widget.LinearLayout{ca63393 V.E...... ........ 89,181-996,252 #7f090499 app:id/a5a}
+                                              me.ele.crowdsource.foundations.ui.SpacingNoColorTextView{d2cefd0 V.ED..... ........ 0,0-334,71 #7f0908a2 app:id/awa}
+                                            android.widget.LinearLayout{47655e2 G.E...C.. ......I. 0,0-0,0 #7f09052a app:id/a98}
+                                              android.support.v7.widget.AppCompatTextView{3599d73 V.ED..... ......ID 0,0-0,0 #7f0908b8 app:id/aww}
+                                              android.support.v7.widget.AppCompatImageView{5134430 V.ED..... ......I. 0,0-0,0 #7f09034d app:id/wb}
+                                            android.support.v7.widget.AppCompatTextView{51ad8a9 G.ED..... ......I. 0,0-0,0 #7f0908a5 app:id/awd}
+                                            me.ele.crowdsource.components.order.orderlist.DoubtfulTipsView{627ee2e G.E...... ......I. 0,0-0,0 #7f0901cf app:id/lv}
+                                              android.widget.RelativeLayout{f269dcf V.E...... ......I. 0,0-0,0}
+                                                android.widget.LinearLayout{4a0735c V.E...... ......I. 0,0-0,0 #7f0904ff app:id/a82}
+                                                  android.support.v7.widget.AppCompatTextView{9f5665 V.ED..... ......ID 0,0-0,0 #7f090a32 app:id/b74}
+                                                  android.support.v7.widget.AppCompatImageView{748bf3a V.ED..... ......I. 0,0-0,0 #7f09034b app:id/w_}
+                                          android.widget.LinearLayout{51947eb G.E...... ......I. 0,0-0,0 #7f0904d9 app:id/a71}
+                                            android.widget.RelativeLayout{a6f6948 G.E...... ......I. 0,0-0,0 #7f0906da app:id/ajx}
+                                              android.support.v7.widget.AppCompatTextView{933f3e1 V.ED..... ......ID 0,0-0,0 #7f090a3a app:id/b7b}
+                                              android.support.v7.widget.AppCompatTextView{739506 V.ED..... ......I. 0,0-0,0 #7f0909c1 app:id/b42}
+                                            android.widget.LinearLayout{14277c7 G.E...... ......I. 0,0-0,0 #7f09067d app:id/ahe}
+                                              android.widget.LinearLayout{4b5d1f4 V.E...... ......I. 0,0-0,0 #7f0904e3 app:id/a7a}
+                                                android.support.v7.widget.AppCompatTextView{e1aed1d V.ED..... ......ID 0,0-0,0 #7f090a3c app:id/b7d}
+                                                android.support.v7.widget.AppCompatTextView{723fb92 V.ED..... ......I. 0,0-0,0 #7f0909ce app:id/b4e}
+                                              android.widget.LinearLayout{5e4c963 V.E...... ......I. 0,0-0,0 #7f0904e4 app:id/a7b}
+                                                android.support.v7.widget.AppCompatTextView{d581960 V.ED..... ......ID 0,0-0,0 #7f090a3b app:id/b7c}
+                                                android.support.v7.widget.AppCompatTextView{67e3e19 V.ED..... ......I. 0,0-0,0 #7f0909cd app:id/b4d}
+                                          me.ele.crowdsource.foundations.ui.FlowLayout{b023ede G.E...... ......I. 0,0-0,0 #7f090272 app:id/qb}
+                                        android.widget.RelativeLayout{cd098bf G.E...... ......I. 0,0-0,0 #7f0906e5 app:id/ak8}
+                                          android.support.v7.widget.AppCompatTextView{6156b8c V.ED..... ......ID 0,0-0,0 #7f090843 app:id/atp}
+                                          android.support.v7.widget.AppCompatImageView{82ba2d5 V.ED..... ......I. 0,0-0,0 #7f0903b4 app:id/z4}
+                                        android.widget.RelativeLayout{bef6aea G.E...... ......I. 0,0-0,0 #7f0906c2 app:id/aj_}
+                                          android.support.v7.widget.AppCompatTextView{28001db V.ED..... ......ID 0,0-0,0 #7f090842 app:id/ato}
+                                          android.support.v7.widget.AppCompatImageView{b73b478 V.ED..... ......I. 0,0-0,0 #7f0903b3 app:id/z3}
+                                        me.ele.crowdsource.components.order.widget.card.OrderOfflineArriveMask{e109751 G.E...... ......I. 0,0-0,0 #7f0905cf app:id/aco}
+                                          android.widget.LinearLayout{4d14bb6 V.E...... ......I. 0,0-0,0}
+                                            android.support.v7.widget.AppCompatImageView{6f2e0b7 V.ED..... ......I. 0,0-0,0}
+                                            android.support.v7.widget.AppCompatTextView{a6ba024 V.ED..... ......ID 0,0-0,0}
+                                            android.support.v7.widget.AppCompatTextView{a76578d V.ED..... ......ID 0,0-0,0}
+                                      android.support.constraint.ConstraintLayout{46049a V.E...... ........ 0,1252-1080,1402}
+                                        android.support.constraint.Guideline{c5311cb G.ED..... ......I. 356,0-356,0 #7f0902c9 app:id/so}
+                                        android.support.constraint.Guideline{ccc9da8 G.ED..... ......I. 713,0-713,0 #7f0902ca app:id/sp}
+                                        android.widget.LinearLayout{71e6d42 G.E...C.. ......I. 0,0-0,0 #7f09048b app:id/a4x}
+                                          android.support.v7.widget.AppCompatTextView{4ad153 V.ED..... ......ID 0,0-0,0 #7f0905d9 app:id/acy}
+                                          android.support.v7.widget.AppCompatTextView{4d49a90 G.ED..... ......ID 0,0-0,0 #7f0905ef app:id/adk}
+                                        me.ele.crowdsource.foundations.ui.MessageIndicatorView{fddf89 G.E...... ......I. 0,0-0,0 #7f09032e app:id/vg}
+                                          android.support.v7.widget.AppCompatTextView{32a1b8e V.ED..... ......I. 0,0-0,0}
+                                          me.ele.crowdsource.foundations.ui.NumberIndicatorView{b272faf V.ED..... ......I. 0,0-0,0}
+                                        me.ele.crowdsource.foundations.utils.statusbar.SlideButton{31880c1 V.E...C.. ........ 33,0-1032,120 #7f090151 app:id/ie}
+                                          android.widget.LinearLayout{eefd066 V.E...... ........ 0,0-999,120}
+                                            android.widget.ProgressBar{536c0d8 G.ED..... ......I. 0,0-0,0 #7f09001a app:id/a0}
+                                            android.support.v7.widget.AppCompatTextView{27effa7 V.ED..... ........ 448,0-550,120 #7f09084d app:id/atz}
+                                            me.ele.crowdsource.components.order.widget.ZBSlideBlockView{90cfbc G.E...... ......I. 0,0-0,0 #7f09074e app:id/an3}
+                                              android.widget.FrameLayout{45beb45 V.E...... ......I. 0,0-0,0}
+                                                android.support.v7.widget.AppCompatTextView{930629a V.ED..... ......ID 0,0-0,0 #7f090a79 app:id/b91}
+                                                android.widget.FrameLayout{4c117cb V.E...... ......I. 0,0-0,0 #7f09044c app:id/a38}
+                                                  android.support.v7.widget.AppCompatImageView{d792ba8 V.ED..... ......I. 0,0-0,0 #7f090341 app:id/w0}
+                                  android.widget.RelativeLayout{a2e7fe9 G.E...... ......ID 0,0-1080,1361 #7f0907c6 app:id/aqb}
+                                    android.widget.LinearLayout{d9c0070 V.E...... ......ID 150,309-930,1052}
+                                      android.support.v7.widget.AppCompatImageView{f252cb6 V.ED..... ......ID 202,0-577,402 #7f0907c8 app:id/aqd}
+                                      android.support.v7.widget.AppCompatTextView{4793dfd G.ED..... ......I. 0,0-0,0 #7f0907c9 app:id/aqe}
+                                      android.support.v7.widget.AppCompatTextView{137adb7 V.ED..... ......ID 60,447-720,569 #7f0907c7 app:id/aqc}
+                                      android.support.v7.widget.AppCompatTextView{5aa2b3 V.ED..C.. ......ID 142,626-637,743 #7f090128 app:id/ha}
+                                android.support.v4.widget.CircleImageView{e2ce924 G.ED..... ......ID 480,-120-600,0}
+                            android.widget.FrameLayout{fffce15 V.E...... ........ 1080,0-2160,1361}
+                              android.widget.RelativeLayout{a03b1f7 G.E...... ......ID 0,0-0,0}
+                                android.support.v7.widget.AppCompatTextView{730aaf2 V.ED..... ......ID 0,0-0,0 #7f0905b8 app:id/ac2}
+                                android.support.v7.widget.AppCompatImageView{cfab543 V.ED..... ......I. 0,0-0,0 #7f090356 app:id/wk}
+                              android.support.v4.widget.SwipeRefreshLayout{e006c8d V.ED..... ........ 0,0-1080,1361 #7f090795 app:id/ap0}
+                                android.support.v4.widget.CircleImageView{6e739a G.ED..... ......ID 480,-120-600,0}
+                                android.widget.FrameLayout{94f5e42 V.E...... ........ 0,0-1080,1361}
+                                  android.widget.LinearLayout{e8f6e53 V.E...... ........ 0,0-1080,1361}
+                                    me.ele.crowdsource.foundations.ui.CustomBannerItem{ecbc7c0 G.E...... ......I. 0,0-0,0 #7f09007b app:id/cm}
+                                      android.widget.LinearLayout{220bcf9 V.E...... ......ID 0,0-0,0}
+                                        android.support.v7.widget.AppCompatTextView{31a843e V.ED..C.. ......ID 0,0-0,0 #7f090a32 app:id/b74}
+                                        android.support.v7.widget.AppCompatImageView{c89629f V.ED..C.. ......I. 0,0-0,0 #7f0903af app:id/yz}
+                                    android.support.v7.widget.RecyclerView{b944489 VFED.V... ........ 0,0-1080,1361 #7f0905f1 app:id/adm}
+                                  android.widget.RelativeLayout{5f91c8e V.E...... ........ 0,0-1080,1361 #7f0907c6 app:id/aqb}
+                                    android.widget.LinearLayout{5989caf V.E...... ........ 282,396-797,965}
+                                      android.support.v7.widget.AppCompatImageView{1238bc V.ED..... ........ 70,0-445,402 #7f0907c8 app:id/aqd}
+                                      android.support.v7.widget.AppCompatTextView{8859fec G.ED..... ......I. 0,0-0,0 #7f0907c9 app:id/aqe}
+                                      android.support.v7.widget.AppCompatTextView{273a045 V.ED..... ........ 60,447-455,569 #7f0907c7 app:id/aqc}
+                                      android.support.v7.widget.AppCompatTextView{4272fb5 G.ED..C.. ......I. 0,0-0,0 #7f090128 app:id/ha}
+                            android.widget.FrameLayout{67626c9 V.E...... ........ 2160,0-3240,1361}
+                              android.widget.RelativeLayout{895f1ce G.E...... ......ID 0,0-0,0}
+                                android.support.v7.widget.AppCompatTextView{36a64a V.ED..... ......ID 0,0-0,0 #7f0905b8 app:id/ac2}
+                                android.support.v7.widget.AppCompatImageView{52b89bb V.ED..... ......I. 0,0-0,0 #7f090356 app:id/wk}
+                              android.support.v4.widget.SwipeRefreshLayout{95c54cb V.ED..... ........ 0,0-1080,1361 #7f090795 app:id/ap0}
+                                android.support.v4.widget.CircleImageView{8209243 G.ED..... ......ID 480,-120-600,0}
+                                android.widget.FrameLayout{e2824a8 V.E...... ........ 0,0-1080,1361}
+                                  android.widget.LinearLayout{432fbc1 V.E...... ........ 0,0-1080,1361}
+                                    me.ele.crowdsource.foundations.ui.CustomBannerItem{922ced8 G.E...... ......I. 0,0-0,0 #7f09007b app:id/cm}
+                                      android.widget.LinearLayout{1e81231 V.E...... ......ID 0,0-0,0}
+                                        android.support.v7.widget.AppCompatTextView{840dd16 V.ED..... ......ID 0,0-0,0 #7f090a32 app:id/b74}
+                                        android.support.v7.widget.AppCompatImageView{bff0697 V.ED..C.. ......I. 0,0-0,0 #7f0903af app:id/yz}
+                                    android.support.v7.widget.RecyclerView{ab02f66 VFED.V... ........ 0,0-1080,1361 #7f0905f1 app:id/adm}
+                                  android.widget.RelativeLayout{a5972a7 V.E...... ........ 0,0-1080,1361 #7f0907c6 app:id/aqb}
+                                    android.widget.LinearLayout{d2ee354 V.E...... ........ 282,396-797,965}
+                                      android.support.v7.widget.AppCompatImageView{d3292fd V.ED..... ........ 70,0-445,402 #7f0907c8 app:id/aqd}
+                                      android.support.v7.widget.AppCompatTextView{f620084 G.ED..... ......I. 0,0-0,0 #7f0907c9 app:id/aqe}
+                                      android.support.v7.widget.AppCompatTextView{3ffdbf2 V.ED..... ........ 60,447-455,569 #7f0907c7 app:id/aqc}
+                                      android.support.v7.widget.AppCompatTextView{2faa06d G.ED..C.. ......I. 0,0-0,0 #7f090128 app:id/ha}
+                      android.widget.RelativeLayout{540e0c0 V.E...... ........ 0,1689-1080,1860 #7f0905db app:id/ad0}
+                        android.widget.LinearLayout{59a61f9 V.E...... ........ 0,3-1080,171 #7f0905da app:id/acz}
+                          android.widget.RelativeLayout{c2bc53e V.E...... ........ 30,12-234,156}
+                            android.support.v7.widget.AppCompatTextView{b00f9f V.ED..C.. ........ 0,0-189,144 #7f0902f0 app:id/tq}
+                            android.widget.LinearLayout{2e5b4a2 G.E...... ......I. 0,0-0,0 #7f09054f app:id/a_8}
+                              android.view.View{237533 V.ED..... ......I. 0,0-0,0}
+                          android.widget.RelativeLayout{3b348ec V.E...C.. ........ 234,12-1050,156 #7f0902f2 app:id/ts}
+                            android.support.v7.widget.AppCompatTextView{61624b5 V.ED..... ........ 15,12-816,132 #7f0902ef app:id/tp}
+                            android.view.View{f9af74a I.ED..... ......I. 406,70-409,73 #7f0902ee app:id/to}
+                            android.support.v7.widget.AppCompatTextView{99006bb I.ED..... ......I. 529,49-649,94 #7f0902f1 app:id/tr}
+                        android.view.View{40207d8 V.ED..... ........ 0,1-1080,3}
+                      me.ele.crowdsource.components.order.ordersetting.WelfarePopView{540a0f0 G.E...... ......I. 0,0-0,0 #7f090b02 app:id/bbq}
+                        android.widget.RelativeLayout{72dd669 V.E...C.. ......I. 0,0-0,0 #7f0906d7 app:id/aju}
+                          android.support.v7.widget.AppCompatTextView{40e78ee V.ED..... ......ID 0,0-0,0 #7f0909ba app:id/b3v}
+                          android.support.v7.widget.AppCompatTextView{916318f V.ED..... ......ID 0,0-0,0 #7f0909ab app:id/b3g}
+                          android.support.v7.widget.AppCompatImageView{526dc1c V.ED..... ......I. 0,0-0,0 #7f090362 app:id/ww}
+                      me.ele.crowdsource.foundations.ui.RankTipsPopView{2447025 G.E...C.. ......I. 0,0-0,0 #7f0906db app:id/ajy}
+                        android.widget.RelativeLayout{2ed35fa V.E...... ......I. 0,0-0,0}
+                          android.support.v7.widget.AppCompatTextView{ece57ab V.ED..... ......ID 0,0-0,0 #7f0909c6 app:id/b47}
+                          android.support.v7.widget.AppCompatTextView{5d39e08 V.ED..... ......ID 0,0-0,0}
+                          android.support.v7.widget.AppCompatImageView{770e9a1 V.ED..... ......I. 0,0-0,0 #7f090362 app:id/ww}
+                      android.widget.RelativeLayout{c515731 V.E...... ........ 0,1215-1080,1860 #7f0906a7 app:id/aij}
+                        me.ele.crowdsource.foundations.ui.ViewPagerCompat{8193e16 GFED..... ......ID 0,0-1080,645 #7f090ae8 app:id/bb1}
+                          me.ele.crowdsource.components.order.widget.card.i{3039a19 V.E...... .......D 0,0-1080,645}
+                            android.widget.RelativeLayout{9d26ade V.E...... ......ID 0,0-1080,645}
+                              android.support.v7.widget.AppCompatImageView{db54bf V.ED..... ......ID 0,0-1080,3 #7f0903dc app:id/a07}
+                              android.widget.FrameLayout{bef778c V.E...... .......D 0,3-1080,645 #7f09025e app:id/ps}
+                                android.widget.RelativeLayout{daabed5 V.E...... .......D 0,0-1080,642}
+                                  android.widget.LinearLayout{59656ea V.E...... ........ 48,102-1032,372}
+                                    android.support.v7.widget.AppCompatImageView{27a7ddb V.ED..... ........ 0,0-240,270 #7f0903d6 app:id/a01}
+                                    android.widget.LinearLayout{2e28078 V.E...... ........ 300,42-984,227}
+                                      android.support.v7.widget.AppCompatTextView{2657351 V.ED..... ........ 0,0-684,81 #7f090a33 app:id/b75}
+                                      android.support.v7.widget.AppCompatTextView{ffaf7b6 V.ED..... ........ 0,93-684,185 #7f090890 app:id/avt}
+                                  android.widget.LinearLayout{2191cb7 V.E...... .......D 0,417-1080,549 #7f0900b1 app:id/e3}
+                                    android.support.v7.widget.AppCompatTextView{53cf38d V.ED..C.. ......ID 54,0-1026,132 #7f0900bf app:id/eg}
+                          me.ele.crowdsource.components.order.widget.card.d{936d942 V.E...... ......ID 1080,0-2160,645}
+                            android.widget.RelativeLayout{d98cd53 V.E...... ......ID 0,0-1080,645}
+                              android.support.v7.widget.AppCompatImageView{9d0e690 V.ED..... ......ID 0,0-1080,3 #7f0903dc app:id/a07}
+                              android.widget.FrameLayout{7923b89 V.E...... ......ID 0,3-1080,645 #7f09025e app:id/ps}
+                                android.widget.RelativeLayout{c5d478e V.E...... ......ID 0,0-1080,642}
+                                  android.widget.LinearLayout{558ebaf V.E...... ......ID 48,102-1032,372}
+                                    android.support.v7.widget.AppCompatImageView{705dbbc V.ED..... ......ID 0,0-240,270 #7f0903d6 app:id/a01}
+                                    android.widget.LinearLayout{5da0745 V.E...... ......ID 300,35-984,235}
+                                      android.support.v7.widget.AppCompatTextView{6a4e9a V.ED..... ......ID 0,0-684,142 #7f090a33 app:id/b75}
+                                      android.support.v7.widget.AppCompatTextView{65293cb V.ED..... ......ID 0,154-684,200 #7f090890 app:id/avt}
+                                  android.widget.LinearLayout{432f7a8 V.E...... ......ID 0,417-1080,549 #7f0900b1 app:id/e3}
+                                    android.support.v7.widget.AppCompatTextView{518d2c1 V.ED..C.. ......ID 54,0-1026,132 #7f0900bf app:id/eg}
+                        android.support.v7.widget.AppCompatTextView{1d4a1c3 V.ED..C.. ........ 966,0-1080,87 #7f090878 app:id/av6}
+                        android.widget.LinearLayout{eae5397 V.E...... ........ 444,570-636,645 #7f0904a0 app:id/a5h}
+                          android.widget.ImageView{56fa9e4 V.ED..... ........ 0,0-48,48}
+                          android.widget.ImageView{a6fe4d V..D..... ........ 48,0-96,48}
+                          android.widget.ImageView{523ed02 V..D..... ........ 96,0-144,48}
+                          android.widget.ImageView{40eb613 V..D..... ........ 144,0-192,48}
+                      android.widget.RelativeLayout{be6b93c V.E...... ........ 0,1478-1080,1860 #7f0906a6 app:id/aii}
+                        me.ele.crowdsource.foundations.ui.LightningView{e1556c5 V.ED..C.. ........ 774,0-1080,115 #7f090870 app:id/auy}
+                    android.widget.LinearLayout{5c8b7c6 G.E...... ......I. 0,0-0,0 #7f090551 app:id/a__}
+                      com.airbnb.lottie.LottieAnimationView{798c387 V.ED..... ......ID 0,0-0,0 #7f09051c app:id/a8u}
+        android.view.View{7fce668 V.ED..... ........ 0,0-1080,60 #102002f android:id/statusBarBackground}
+    Looper (main, tid 1) {90892b4}
+      package me.ele.crowdsource version Code: 119 version Name: 5.5.5 cur loop is : Looper (main, tid 1) {90892b4}
+Dump time : 2019-05-10 11:35:27.038+0800
+---------- History of long time messages on Looper (main, tid 1) {90892b4}----------
+-------------------------- END --------------------------
+---------- Dump MessageQueue on Looper (main, tid 1) {90892b4}----------
+Running message is { when=-26ms what=136 obj=android.app.ActivityThread$DumpComponentInfo@f24c2c6 target=android.app.ActivityThread$H planTime=1557459327013 dispatchTime=1557459327017 finishTime=0 }
+     Message 0: { when=+214ms callback=me.ele.punchingservice.g$2 target=android.os.Handler planTime=1557459327253 dispatchTime=0 finishTime=0 }
+     Message 1: { when=+1s870ms what=1 target=android.widget.ViewFlipper$2 planTime=1557459328909 dispatchTime=0 finishTime=0 }
+     Message 2: { when=+2s13ms what=0 target=android.os.Handler planTime=1557459329051 dispatchTime=0 finishTime=0 }
+     Message 3: { when=+5s256ms callback=me.ele.im.base.connect.EIMConnectServiceImpl$ListenConnectTask target=android.os.Handler planTime=1557459332295 dispatchTime=0 finishTime=0 }
+     Message 4: { when=+15s214ms what=19 target=me.ele.poll.lib.b$2 planTime=1557459342253 dispatchTime=0 finishTime=0 }
+     Message 5: { when=+18026d2h31m35s712ms callback=com.laiwang.protocol.android.bc$b target=android.os.Handler planTime=3114914822751 dispatchTime=0 finishTime=0 }
+     (Total messages: 6, polling=false, quitting=false)
+-------------------------- END --------------------------
+
+    Local FragmentActivity cd8893b State:
+      mCreated=true mResumed=true mStopped=false    Active Fragments in 917edd:
+      #0: ProcessingOrderManagerFragment{f466d9c #0 id=0x7f0902ed me.ele.crowdsource.view.order.ProcessingOrderManagerFragment}
+        mFragmentId=#7f0902ed mContainerId=#ffffffff mTag=me.ele.crowdsource.view.order.ProcessingOrderManagerFragment
+        mState=4 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+        mAdded=true mRemoving=false mFromLayout=true mInLayout=true
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=true
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{917edd in HostCallbacks{e888a52}}
+        mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+        mView=android.widget.RelativeLayout{163b54b V.E...... ........ 0,0-1080,1860 #7f0902ed app:id/tn}
+        mInnerView=android.widget.RelativeLayout{163b54b V.E...... ........ 0,0-1080,1860 #7f0902ed app:id/tn}
+        Child FragmentManager{7b41123 in ProcessingOrderManagerFragment{f466d9c}}:
+          Active Fragments in 7b41123:
+            #0: ae{7674af3 #0 id=0x7f090ae6 android:switcher:2131299046:0}
+              mFragmentId=#7f090ae6 mContainerId=#7f090ae6 mTag=android:switcher:2131299046:0
+              mState=4 mIndex=0 mWho=android:fragment:0:0 mBackStackNesting=0
+              mAdded=true mRemoving=false mFromLayout=false mInLayout=false
+              mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+              mRetainInstance=false mRetaining=false mUserVisibleHint=true
+              mFragmentManager=FragmentManager{7b41123 in ProcessingOrderManagerFragment{f466d9c}}
+              mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+              mParentFragment=ProcessingOrderManagerFragment{f466d9c #0 id=0x7f0902ed me.ele.crowdsource.view.order.ProcessingOrderManagerFragment}
+              mContainer=me.ele.crowdsource.foundations.ui.ViewPagerCompat{d20e73c VFED..... ........ 0,172-1080,1533 #7f090ae6 app:id/baz}
+              mView=android.widget.FrameLayout{498b39c V.E...... ........ 0,0-1080,1361}
+              mInnerView=android.widget.FrameLayout{498b39c V.E...... ........ 0,0-1080,1361}
+              Child FragmentManager{8f62620 in ae{7674af3}}:
+                FragmentManager misc state:
+                  mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+                  mContainer=android.support.v4.app.Fragment$2@d2c2bd9
+                  mParent=ae{7674af3 #0 id=0x7f090ae6 android:switcher:2131299046:0}
+                  mCurState=4 mStateSaved=false mStopped=false mDestroyed=false
+            #1: ag{64da2ba #1 id=0x7f090ae6 android:switcher:2131299046:1}
+              mFragmentId=#7f090ae6 mContainerId=#7f090ae6 mTag=android:switcher:2131299046:1
+              mState=4 mIndex=1 mWho=android:fragment:0:1 mBackStackNesting=0
+              mAdded=true mRemoving=false mFromLayout=false mInLayout=false
+              mHidden=false mDetached=false mMenuVisible=false mHasMenu=false
+              mRetainInstance=false mRetaining=false mUserVisibleHint=false
+              mFragmentManager=FragmentManager{7b41123 in ProcessingOrderManagerFragment{f466d9c}}
+              mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+              mParentFragment=ProcessingOrderManagerFragment{f466d9c #0 id=0x7f0902ed me.ele.crowdsource.view.order.ProcessingOrderManagerFragment}
+              mContainer=me.ele.crowdsource.foundations.ui.ViewPagerCompat{d20e73c VFED..... ........ 0,172-1080,1533 #7f090ae6 app:id/baz}
+              mView=android.widget.FrameLayout{fffce15 V.E...... ........ 1080,0-2160,1361}
+              mInnerView=android.widget.FrameLayout{fffce15 V.E...... ........ 1080,0-2160,1361}
+              Child FragmentManager{400f99e in ag{64da2ba}}:
+                FragmentManager misc state:
+                  mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+                  mContainer=android.support.v4.app.Fragment$2@eac9c7f
+                  mParent=ag{64da2ba #1 id=0x7f090ae6 android:switcher:2131299046:1}
+                  mCurState=4 mStateSaved=false mStopped=false mDestroyed=false
+            #2: e{1a33086 #2 id=0x7f090ae6 android:switcher:2131299046:2}
+              mFragmentId=#7f090ae6 mContainerId=#7f090ae6 mTag=android:switcher:2131299046:2
+              mState=4 mIndex=2 mWho=android:fragment:0:2 mBackStackNesting=0
+              mAdded=true mRemoving=false mFromLayout=false mInLayout=false
+              mHidden=false mDetached=false mMenuVisible=false mHasMenu=false
+              mRetainInstance=false mRetaining=false mUserVisibleHint=false
+              mFragmentManager=FragmentManager{7b41123 in ProcessingOrderManagerFragment{f466d9c}}
+              mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+              mParentFragment=ProcessingOrderManagerFragment{f466d9c #0 id=0x7f0902ed me.ele.crowdsource.view.order.ProcessingOrderManagerFragment}
+              mContainer=me.ele.crowdsource.foundations.ui.ViewPagerCompat{d20e73c VFED..... ........ 0,172-1080,1533 #7f090ae6 app:id/baz}
+              mView=android.widget.FrameLayout{67626c9 V.E...... ........ 2160,0-3240,1361}
+              mInnerView=android.widget.FrameLayout{67626c9 V.E...... ........ 2160,0-3240,1361}
+              Child FragmentManager{67844c in e{1a33086}}:
+                FragmentManager misc state:
+                  mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+                  mContainer=android.support.v4.app.Fragment$2@52aac95
+                  mParent=e{1a33086 #2 id=0x7f090ae6 android:switcher:2131299046:2}
+                  mCurState=4 mStateSaved=false mStopped=false mDestroyed=false
+          Added Fragments:
+            #0: ae{7674af3 #0 id=0x7f090ae6 android:switcher:2131299046:0}
+            #1: ag{64da2ba #1 id=0x7f090ae6 android:switcher:2131299046:1}
+            #2: e{1a33086 #2 id=0x7f090ae6 android:switcher:2131299046:2}
+          FragmentManager misc state:
+            mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+            mContainer=android.support.v4.app.Fragment$2@3ff11aa
+            mParent=ProcessingOrderManagerFragment{f466d9c #0 id=0x7f0902ed me.ele.crowdsource.view.order.ProcessingOrderManagerFragment}
+            mCurState=4 mStateSaved=false mStopped=false mDestroyed=false
+    Added Fragments:
+      #0: ProcessingOrderManagerFragment{f466d9c #0 id=0x7f0902ed me.ele.crowdsource.view.order.ProcessingOrderManagerFragment}
+    Fragments Created Menus:
+      #0: ProcessingOrderManagerFragment{f466d9c #0 id=0x7f0902ed me.ele.crowdsource.view.order.ProcessingOrderManagerFragment}
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@e888a52
+      mCurState=4 mStateSaved=false mStopped=false mDestroyed=false
