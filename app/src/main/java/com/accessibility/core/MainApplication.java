@@ -32,11 +32,14 @@ public class MainApplication extends ZBaseApp {
             // 只有主进程初始化这些信息
             mInfo = new MainProcInfo();
             mInfo.init(this);
-        } else if (procName.equals(packageName+":pushservice")) {
+        } else if (procName.equals(packageName+":BackgroundService")) {
             super.onInit(packageName,packageName);
-            // :pushservice进程
+            mInfo = new MainProcInfo();
+            mInfo.init(this);
         } else {
             super.onInit(packageName,procName);
+            mInfo = new MainProcInfo();
+            mInfo.init(this);
         }
     }
 

@@ -6,9 +6,6 @@ import android.view.accessibility.AccessibilityEvent;
 
 import com.accessibility.utils.AccessibilityLog;
 
-/**
- * Created by popfisher on 2017/7/6.
- */
 
 @TargetApi(16)
 public class AccessibilitySampleService extends AccessibilityService {

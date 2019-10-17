@@ -13,9 +13,6 @@ import com.accessibility.utils.AccessibilityLog;
 
 import java.util.List;
 
-/**
- * Created by popfisher on 2017/7/11.
- */
 
 @TargetApi(16)
 public class AccessibilityOperator {

@@ -3,9 +3,6 @@ package com.accessibility;
 import android.content.Context;
 import android.content.Intent;
 
-/**
- * Created by popfisher on 2017/7/6.
- */
 
 public class OpenAccessibilitySettingHelper {
     private static final String ACTION = "action";

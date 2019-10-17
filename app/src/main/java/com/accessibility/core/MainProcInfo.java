@@ -37,7 +37,7 @@ public class MainProcInfo implements ICommon {
         app.app_name = ctx.getString(R.string.app_name);
         app.am = mActivityManager;
         app.db = new AppDBHelper();
-//        app.Toast_Layout = R.layout.toast_normal;
+        app.Toast_Layout = R.layout.toast_normal;
 //		app.Toast_Animtion = R.style.anim_view;
 //        app.Toast_ID_Text = R.id.mTvContent;
 //        app.Loading_Layout = R.layout.loading_dialog_new;

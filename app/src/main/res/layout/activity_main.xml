@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_accessibility_main"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.accessibility.AccessibilityMainActivity">
+
+    <EditText
+        android:id="@+id/mEtSMS"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:text="##10001#"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/mBtnNetWork"
+        style="@style/btnYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="访问WIFI状态"/>
+
+
+    <Button
+        android:id="@+id/mBtnGetCallLog"
+        style="@style/btnYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="获取通话记录"/>
+
+    <Button
+        android:id="@+id/mBtnTestSMS"
+        style="@style/btnYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="测试SMS"/>
+
+    <Button
+        android:id="@+id/mBtnStop"
+        style="@style/btnYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="关闭音乐"/>
+
+
+    <Button
+        android:id="@+id/mBtnActToA1"
+        style="@style/btnYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="跳转到A应用A1页面"/>
+
+    <Button
+        android:id="@+id/mBtnActToA2"
+        style="@style/btnYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="跳转到A应用A2页面"/>
+
+    <Button
+        android:id="@+id/mBtnEnter"
+        style="@style/btnYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="进入辅助功能页面"
+        android:visibility="visible"/>
+
+</LinearLayout>

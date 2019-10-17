@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minWidth="100dp"
+    android:minHeight="30dp"
+    android:background="@drawable/btn_rectangle_gray2"
+    android:orientation="horizontal" >
+
+    <com.qingdao.terminal.view.CustomTextView
+        android:id="@+id/mTvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:gravity="center"
+        android:textColor="@color/gray_e0e0e0"
+        android:textSize="17sp" />
+
+</RelativeLayout>

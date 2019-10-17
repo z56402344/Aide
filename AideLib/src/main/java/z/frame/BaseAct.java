@@ -13,8 +13,7 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
-
-import com.k12lib.afast.utils.ToastUtils;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -324,9 +323,10 @@ public class BaseAct extends FragmentActivity implements ICommon, View.OnClickLi
 	}
 
 	// 显示提示
-	public void showShortToast(Object txt) {
+	public void showShortToast(String txt) {
 		if (txt==null) return;
-		ToastUtils.showShortToast(txt);
+//		ToastUtils.showShortToast(txt);
+		Toast.makeText(getBaseContext(), txt, Toast.LENGTH_SHORT).show();
 	}
 	public static class TransInfo {
 		public Fragment fg = null; // null:pop not-null:push

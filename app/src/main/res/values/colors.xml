@@ -16,6 +16,7 @@
     <color name="gray_1e1e1e">#1e1e1e</color>
     <color name="login_text">#99000000</color>
     <color name="login_EditText">#99959595</color>
+    <color name="gray_e0e0e0">#e0e0e0</color>
 
     <!-- 黄色 -->
     <color name="btn_yellow_up">#fcc800</color>

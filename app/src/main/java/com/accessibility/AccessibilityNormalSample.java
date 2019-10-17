@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +29,7 @@ public class AccessibilityNormalSample extends Activity implements View.OnClickL
 
 //    private DelayAction mDelay = new DelayAction(); // 防止点击太频繁
     private String mName = "确认";//轮询的查找的按钮名称
+    private String[] mArrayNames;
     private int mTime = 130;//轮询的间隔时间
     private boolean isStop = true;
 
@@ -73,9 +75,18 @@ public class AccessibilityNormalSample extends Activity implements View.OnClickL
             mBtnStop.setVisibility(View.VISIBLE);
             mBtnStart.setVisibility(View.GONE);
             isStop = false;
-            mName = mEtName.getText().toString();
-            mTime = Integer.valueOf(mEtTime.getText().toString());
-            postHandler();
+            String names = mEtName.getText().toString();
+            if (TextUtils.isEmpty(names)){
+                return;
+            }
+            try{
+                mArrayNames = names.split("#");
+                mTime = Integer.valueOf(mEtTime.getText().toString());
+                postHandler();
+            }catch (Exception e){
+
+            }
+
             break;
         case R.id.mBtnStop:
             mBtnStop.setVisibility(View.GONE);
@@ -98,15 +109,19 @@ public class AccessibilityNormalSample extends Activity implements View.OnClickL
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                simulationClickByText2();
+                if (mArrayNames == null || mArrayNames.length == 0){
+                    return;
+                }
+                for (int i = 0; i < mArrayNames.length; i++) {
+                    simulationClickByText2(mArrayNames[i]);
+                }
                 mHandler.sendEmptyMessage(IA_CLICK);
             }
         }, postTime);
     }
 
-
-    private void simulationClickByText2() {
-        boolean result = AccessibilityOperator.getInstance().clickByText(mName);
+    private void simulationClickByText2(String str) {
+        boolean result = AccessibilityOperator.getInstance().clickByText(str);
         AccessibilityLog.printLog(result ? mName+"点击成功" : mName+"点击失败");
     }
 
